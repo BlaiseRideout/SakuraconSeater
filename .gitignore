@@ -3,3 +3,4 @@
 *.pyc
 build/
 Output/
+env/

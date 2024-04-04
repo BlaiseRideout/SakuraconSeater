@@ -36,14 +36,12 @@
 				<button class="startbutton" onClick="startTable({{ Id }});">Start</button>
 				<button class="fillbutton" onClick="fillTable({{ Id }});">Fill</button>
 				<button class="notifybutton" onClick="notifyTable({{ Id }});">Notify</button>
-				<button class="clearschedulebutton">Clear Schedule</button>
 				<div class="inputs">
 					<select class="tabletype" data-table="{{ Id }}" data-type="{{ Type }}">
 						{{#tabletypes}}
 							<option value="{{ Type }}">{{ Type }}</option>
 						{{/tabletypes}}
 					</select>
-					<input type="text" class="scheduledstart" value="{{ ScheduledStart }}" data-table="{{ Id }}" placeholder="Scheduled Start"/>
 				</div>
 			{{ /Playing }}
 		</div>

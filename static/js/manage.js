@@ -46,13 +46,6 @@
 							tabletypedisp.show();
 						}
 					});
-					$("#tables .scheduledstart").datetimepicker({'format':'Y-m-d H:i:00'});
-					$("#tables .scheduledstart").change(window.tableSchedule);
-					$("#tables .clearschedulebutton").click(function() {
-						var scheduledStart = $(this).parents(".table").find(".scheduledstart");
-						scheduledStart.val("");
-						scheduledStart.change();
-					});
 					if(editMode) {
 						$("#tables .tabletype").change(window.tableType);
 						$("#tables .table").draggable({
@@ -68,7 +61,7 @@
 								}, 'json');
 							}
 						});
-						$("#tables .table").find(".elapsed,.players,.startbutton,.fillbutton,.notifybutton,.clearschedulebutton,.scheduledstart").hide();
+						$("#tables .table").find(".elapsed,.players,.startbutton,.fillbutton,.notifybutton").hide();
 						$("#addtable").css("display", "inline-block");
 						$("#editmode").text("Stop Editing");
 					}
